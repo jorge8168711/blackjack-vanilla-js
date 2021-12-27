@@ -7,7 +7,7 @@
   "scripts": {
     "start": "npm-run-all --parallel 'watch:*'",
     "watch:start": "parcel src/index.html",
-    "watch:css": "tailwindcss -i src/styles.css -o src/assets/tailwind/tailwind.css -w",
+    "watch:css": "tailwindcss -i src/assets/css/styles.css -o src/assets/css/tailwind.css -w",
     "build": "parcel build"
   },
   "keywords": [],
