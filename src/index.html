@@ -11,25 +11,28 @@
 <body class="bg-green-600">
   <header class="text-center py-4">
     <button class="bg-red-500 rounded px-2 py-1 text-white shadow-md mr-2" type="button">New game</button>
-    <button class="bg-blue-400 rounded px-2 py-1 text-white shadow-md mr-2" type="button">Request card</button>
+    <button
+      class="bg-blue-400 rounded px-2 py-1 text-white shadow-md mr-2"
+      type="button"
+      id="requestCard">
+      Request card
+    </button>
+
     <button class="bg-blue-400 rounded px-2 py-1 text-white shadow-md" type="button">Stop</button>
   </header>
 
   <main>
     <section class="max-w-5xl mx-auto mb-10">
-      <h2 class="text-white font-light text-2xl mb-2">Jugador 1 - 0</h2>
-      <div class="flex">
-        <img class="w-32 shadow-xl mr-4" src="./assets/img/cards/7S-min.png" alt="card">
-        <img class="w-32 shadow-xl mr-4" src="./assets/img/cards/7S-min.png" alt="card">
-      </div>
+      <h2 class="text-white font-light text-2xl mb-2">
+        Jugador 1 - <small id="playerScoreLabel">0</small>
+      </h2>
+
+      <div class="flex" id="playerCardsList"></div>
     </section>
 
     <section class="max-w-5xl mx-auto">
       <h2 class="text-white font-light text-2xl mb-2">Jugador 1 - 0</h2>
-      <div class="flex">
-        <img class="w-32 shadow-xl mr-4" src="./assets/img/cards/7S-min.png" alt="card">
-        <img class="w-32 shadow-xl mr-4" src="./assets/img/cards/7S-min.png" alt="card">
-      </div>
+      <div class="flex"></div>
     </section>
   </main>
 </body>
